@@ -6,12 +6,9 @@ public:
     LogIn();
     ~LogIn();
 
-    bool valid(int P); 
-    void activateSystem(int P); 
-    bool isActive(); 
+    bool isValid(int P); 
 
-private:
-    bool active; // Holds the state of the system
+    int promptForPin();
 };
 
 #endif // LOGIN_H

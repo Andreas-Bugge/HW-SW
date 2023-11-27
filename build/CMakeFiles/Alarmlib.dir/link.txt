@@ -1,0 +1,2 @@
+/usr/bin/ar qc libAlarmlib.a CMakeFiles/Alarmlib.dir/sourcefiles/Login.cpp.o CMakeFiles/Alarmlib.dir/sourcefiles/StateManagement.cpp.o CMakeFiles/Alarmlib.dir/sourcefiles/Sensors.cpp.o CMakeFiles/Alarmlib.dir/sourcefiles/Camera.cpp.o CMakeFiles/Alarmlib.dir/sourcefiles/SharedData.cpp.o CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.o
+/usr/bin/ranlib libAlarmlib.a

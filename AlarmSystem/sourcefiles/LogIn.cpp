@@ -1,31 +1,25 @@
 #include "../headerfiles/LogIn.h"
-
 #include <cstdlib> 
 #include <ctime> 
 
-
-LogIn::LogIn() : active(false) {
-    //* Initialize the random number generator
+LogIn::LogIn() {
+    // Initialiser den tilfældige number generator
     srand(static_cast<unsigned int>(time(nullptr)));
 }
 
 LogIn::~LogIn() {
-    
 }
 
-bool LogIn::valid(int P) {
-    //* Check if the pin is valid (even number)
-    return P % 2 == 0;
-}
-
-void LogIn::activateSystem(int P) {
-    //* Attempt to activate the system with a pin
-    if (valid(P)) {
-        active = true;
+bool LogIn::isValid(int P) {
+    if (P % 2 == 0) {
+        return true;
+    } else {
+        return false;
     }
 }
 
-bool LogIn::isActive() {
-    //* Return the state of the system
-    return active;
+int LogIn::promptForPin() {
+    int enteredPin = rand() % 10;
+    isValid(enteredPin);
+    return enteredPin;
 }

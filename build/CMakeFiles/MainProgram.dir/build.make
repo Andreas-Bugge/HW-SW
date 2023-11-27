@@ -83,50 +83,18 @@ CMakeFiles/MainProgram.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MainProgram.dir/main.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp -o CMakeFiles/MainProgram.dir/main.cpp.s
 
-CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.o: CMakeFiles/MainProgram.dir/flags.make
-CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.o: /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/LogIn.cpp
-CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.o: CMakeFiles/MainProgram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.o -MF CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.o.d -o CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/LogIn.cpp
-
-CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/LogIn.cpp > CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.i
-
-CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/LogIn.cpp -o CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.s
-
-CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.o: CMakeFiles/MainProgram.dir/flags.make
-CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.o: /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/StateManagement.cpp
-CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.o: CMakeFiles/MainProgram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.o -MF CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.o.d -o CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/StateManagement.cpp
-
-CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/StateManagement.cpp > CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.i
-
-CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/StateManagement.cpp -o CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.s
-
 # Object files for target MainProgram
 MainProgram_OBJECTS = \
-"CMakeFiles/MainProgram.dir/main.cpp.o" \
-"CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.o" \
-"CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.o"
+"CMakeFiles/MainProgram.dir/main.cpp.o"
 
 # External object files for target MainProgram
 MainProgram_EXTERNAL_OBJECTS =
 
 MainProgram: CMakeFiles/MainProgram.dir/main.cpp.o
-MainProgram: CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.o
-MainProgram: CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.o
 MainProgram: CMakeFiles/MainProgram.dir/build.make
-MainProgram: liblogIn.a
+MainProgram: libAlarmlib.a
 MainProgram: CMakeFiles/MainProgram.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MainProgram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MainProgram"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MainProgram.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

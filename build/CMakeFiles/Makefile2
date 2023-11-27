@@ -63,8 +63,7 @@ CMAKE_BINARY_DIR = /Users/mathiesschou/Desktop/HW-SW/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/logIn.dir/all
-all: CMakeFiles/stateManagement.dir/all
+all: CMakeFiles/Alarmlib.dir/all
 all: CMakeFiles/MainProgram.dir/all
 .PHONY : all
 
@@ -73,76 +72,49 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/logIn.dir/clean
-clean: CMakeFiles/stateManagement.dir/clean
+clean: CMakeFiles/Alarmlib.dir/clean
 clean: CMakeFiles/MainProgram.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/logIn.dir
+# Target rules for target CMakeFiles/Alarmlib.dir
 
 # All Build rule for target.
-CMakeFiles/logIn.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=5,6 "Built target logIn"
-.PHONY : CMakeFiles/logIn.dir/all
+CMakeFiles/Alarmlib.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Alarmlib"
+.PHONY : CMakeFiles/Alarmlib.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/logIn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/logIn.dir/all
+CMakeFiles/Alarmlib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Alarmlib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 0
-.PHONY : CMakeFiles/logIn.dir/rule
+.PHONY : CMakeFiles/Alarmlib.dir/rule
 
 # Convenience name for target.
-logIn: CMakeFiles/logIn.dir/rule
-.PHONY : logIn
+Alarmlib: CMakeFiles/Alarmlib.dir/rule
+.PHONY : Alarmlib
 
 # clean rule for target.
-CMakeFiles/logIn.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/clean
-.PHONY : CMakeFiles/logIn.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/stateManagement.dir
-
-# All Build rule for target.
-CMakeFiles/stateManagement.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=7,8 "Built target stateManagement"
-.PHONY : CMakeFiles/stateManagement.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/stateManagement.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stateManagement.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 0
-.PHONY : CMakeFiles/stateManagement.dir/rule
-
-# Convenience name for target.
-stateManagement: CMakeFiles/stateManagement.dir/rule
-.PHONY : stateManagement
-
-# clean rule for target.
-CMakeFiles/stateManagement.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/clean
-.PHONY : CMakeFiles/stateManagement.dir/clean
+CMakeFiles/Alarmlib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/clean
+.PHONY : CMakeFiles/Alarmlib.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/MainProgram.dir
 
 # All Build rule for target.
-CMakeFiles/MainProgram.dir/all: CMakeFiles/logIn.dir/all
+CMakeFiles/MainProgram.dir/all: CMakeFiles/Alarmlib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=1,2,3,4 "Built target MainProgram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=8,9 "Built target MainProgram"
 .PHONY : CMakeFiles/MainProgram.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MainProgram.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MainProgram.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 0
 .PHONY : CMakeFiles/MainProgram.dir/rule

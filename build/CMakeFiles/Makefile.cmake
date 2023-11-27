@@ -47,7 +47,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/logIn.dir/DependInfo.cmake"
-  "CMakeFiles/stateManagement.dir/DependInfo.cmake"
+  "CMakeFiles/Alarmlib.dir/DependInfo.cmake"
   "CMakeFiles/MainProgram.dir/DependInfo.cmake"
   )

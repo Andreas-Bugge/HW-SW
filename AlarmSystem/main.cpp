@@ -1,23 +1,76 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <thread>
 
 //* Headerfiles
 #include "headerfiles/LogIn.h"
+#include "headerfiles/StateManagement.h"
+#include "headerfiles/Sensors.h"
+#include "headerfiles/Camera.h"
+#include "headerfiles/SharedData.h"
+#include "headerfiles/IntrusionDetector.h"
 
 int main() {
-    // Logging into the system
-    LogIn loginSystem;
+    srand(static_cast<unsigned int>(time(nullptr)));
 
-    while (!loginSystem.isActive()) {
-        int P = rand() % 10; // Generate a random pin less than 10
+    StateManagement stateManager;
+    LogIn loginSystem;
+    Sensors sensor1, sensor2;
+    Camera camera;
+    SharedData sharedData;
+    IntrusionDetector intrusionDetector;
+
+    std::cout << "Alarm system is active ? \n" << stateManager.isSystemActive() << "\n" << std::endl;
+
+
+    //! System state: Inactive - logging in
+    while (true) {
+        int P = rand() % 10; 
         std::cout << "Generated pin: " << P << std::endl;
 
-        if(loginSystem.valid(P)) {
+        if(loginSystem.isValid(P)) {
             std::cout << "Pin is valid. Activating alarm system." << std::endl;
-            loginSystem.activateSystem(P);    
+            if(stateManager.activateSystem(true)) {
+                break;
+            }
         } else {
-            std::cout << "Pin is invalud. System remains inactive." << std::endl;
+            std::cout << "Pin is invalid. System remains inactive." << std::endl;
         }
     }
+
+    std::thread sensorThread(sensorTask, std::ref(sharedData), std::ref(sensor1), std::ref(sensor2));
+    std::thread cameraThread(cameraTask, std::ref(sharedData), std::ref(camera));
+
+    //! Systemstate: Active
+    while (stateManager.isSystemActive()) {
+        int sensorSum = sharedData.getSensorSum();
+        auto cameraData = sharedData.getCameraData();
+
+        if (intrusionDetector.checkForIntrusion(sharedData)) {
+            std::cout << "Intrusion detected! Activating alarm." << std::endl;
+            stateManager.activateAlarm();
+            intrusionDetector.handleIntrusion(stateManager, loginSystem);
+        }
+    
+
+    //! Print statements
+    /*std::cout << "Sensor Sum: " << sensorSum << "\n";
+
+    std::cout << "Camera Data:\n";
+    for (const auto& row : cameraData) {
+        for (int val : row) {
+            std::cout << val << " ";
+        }
+        std::cout << "\n"; // Newline after each row
+    }
+
+    std::cout << "\n"; 
+        std::this_thread::sleep_for(std::chrono::milliseconds(60)); */
+    }
+    
+    sensorThread.join();
+    cameraThread.join();
 
     return 0;
 }

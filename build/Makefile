@@ -117,30 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named logIn
+# Target rules for targets named Alarmlib
 
 # Build rule for target.
-logIn: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logIn
-.PHONY : logIn
+Alarmlib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Alarmlib
+.PHONY : Alarmlib
 
 # fast build rule for target.
-logIn/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/build
-.PHONY : logIn/fast
-
-#=============================================================================
-# Target rules for targets named stateManagement
-
-# Build rule for target.
-stateManagement: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stateManagement
-.PHONY : stateManagement
-
-# fast build rule for target.
-stateManagement/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/build
-.PHONY : stateManagement/fast
+Alarmlib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/build
+.PHONY : Alarmlib/fast
 
 #=============================================================================
 # Target rules for targets named MainProgram
@@ -179,40 +166,132 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-sourcefiles/LogIn.o: sourcefiles/LogIn.cpp.o
-.PHONY : sourcefiles/LogIn.o
+sourcefiles/Camera.o: sourcefiles/Camera.cpp.o
+.PHONY : sourcefiles/Camera.o
 
 # target to build an object file
-sourcefiles/LogIn.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/sourcefiles/LogIn.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.o
-.PHONY : sourcefiles/LogIn.cpp.o
+sourcefiles/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/Camera.cpp.o
+.PHONY : sourcefiles/Camera.cpp.o
 
-sourcefiles/LogIn.i: sourcefiles/LogIn.cpp.i
-.PHONY : sourcefiles/LogIn.i
+sourcefiles/Camera.i: sourcefiles/Camera.cpp.i
+.PHONY : sourcefiles/Camera.i
 
 # target to preprocess a source file
-sourcefiles/LogIn.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/sourcefiles/LogIn.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.i
-.PHONY : sourcefiles/LogIn.cpp.i
+sourcefiles/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/Camera.cpp.i
+.PHONY : sourcefiles/Camera.cpp.i
 
-sourcefiles/LogIn.s: sourcefiles/LogIn.cpp.s
-.PHONY : sourcefiles/LogIn.s
+sourcefiles/Camera.s: sourcefiles/Camera.cpp.s
+.PHONY : sourcefiles/Camera.s
 
 # target to generate assembly for a file
-sourcefiles/LogIn.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/sourcefiles/LogIn.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.s
-.PHONY : sourcefiles/LogIn.cpp.s
+sourcefiles/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/Camera.cpp.s
+.PHONY : sourcefiles/Camera.cpp.s
+
+sourcefiles/IntrusionDetector.o: sourcefiles/IntrusionDetector.cpp.o
+.PHONY : sourcefiles/IntrusionDetector.o
+
+# target to build an object file
+sourcefiles/IntrusionDetector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.o
+.PHONY : sourcefiles/IntrusionDetector.cpp.o
+
+sourcefiles/IntrusionDetector.i: sourcefiles/IntrusionDetector.cpp.i
+.PHONY : sourcefiles/IntrusionDetector.i
+
+# target to preprocess a source file
+sourcefiles/IntrusionDetector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.i
+.PHONY : sourcefiles/IntrusionDetector.cpp.i
+
+sourcefiles/IntrusionDetector.s: sourcefiles/IntrusionDetector.cpp.s
+.PHONY : sourcefiles/IntrusionDetector.s
+
+# target to generate assembly for a file
+sourcefiles/IntrusionDetector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.s
+.PHONY : sourcefiles/IntrusionDetector.cpp.s
+
+sourcefiles/Login.o: sourcefiles/Login.cpp.o
+.PHONY : sourcefiles/Login.o
+
+# target to build an object file
+sourcefiles/Login.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/Login.cpp.o
+.PHONY : sourcefiles/Login.cpp.o
+
+sourcefiles/Login.i: sourcefiles/Login.cpp.i
+.PHONY : sourcefiles/Login.i
+
+# target to preprocess a source file
+sourcefiles/Login.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/Login.cpp.i
+.PHONY : sourcefiles/Login.cpp.i
+
+sourcefiles/Login.s: sourcefiles/Login.cpp.s
+.PHONY : sourcefiles/Login.s
+
+# target to generate assembly for a file
+sourcefiles/Login.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/Login.cpp.s
+.PHONY : sourcefiles/Login.cpp.s
+
+sourcefiles/Sensors.o: sourcefiles/Sensors.cpp.o
+.PHONY : sourcefiles/Sensors.o
+
+# target to build an object file
+sourcefiles/Sensors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/Sensors.cpp.o
+.PHONY : sourcefiles/Sensors.cpp.o
+
+sourcefiles/Sensors.i: sourcefiles/Sensors.cpp.i
+.PHONY : sourcefiles/Sensors.i
+
+# target to preprocess a source file
+sourcefiles/Sensors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/Sensors.cpp.i
+.PHONY : sourcefiles/Sensors.cpp.i
+
+sourcefiles/Sensors.s: sourcefiles/Sensors.cpp.s
+.PHONY : sourcefiles/Sensors.s
+
+# target to generate assembly for a file
+sourcefiles/Sensors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/Sensors.cpp.s
+.PHONY : sourcefiles/Sensors.cpp.s
+
+sourcefiles/SharedData.o: sourcefiles/SharedData.cpp.o
+.PHONY : sourcefiles/SharedData.o
+
+# target to build an object file
+sourcefiles/SharedData.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/SharedData.cpp.o
+.PHONY : sourcefiles/SharedData.cpp.o
+
+sourcefiles/SharedData.i: sourcefiles/SharedData.cpp.i
+.PHONY : sourcefiles/SharedData.i
+
+# target to preprocess a source file
+sourcefiles/SharedData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/SharedData.cpp.i
+.PHONY : sourcefiles/SharedData.cpp.i
+
+sourcefiles/SharedData.s: sourcefiles/SharedData.cpp.s
+.PHONY : sourcefiles/SharedData.s
+
+# target to generate assembly for a file
+sourcefiles/SharedData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/SharedData.cpp.s
+.PHONY : sourcefiles/SharedData.cpp.s
 
 sourcefiles/StateManagement.o: sourcefiles/StateManagement.cpp.o
 .PHONY : sourcefiles/StateManagement.o
 
 # target to build an object file
 sourcefiles/StateManagement.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/sourcefiles/StateManagement.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/StateManagement.cpp.o
 .PHONY : sourcefiles/StateManagement.cpp.o
 
 sourcefiles/StateManagement.i: sourcefiles/StateManagement.cpp.i
@@ -220,8 +299,7 @@ sourcefiles/StateManagement.i: sourcefiles/StateManagement.cpp.i
 
 # target to preprocess a source file
 sourcefiles/StateManagement.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/sourcefiles/StateManagement.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/StateManagement.cpp.i
 .PHONY : sourcefiles/StateManagement.cpp.i
 
 sourcefiles/StateManagement.s: sourcefiles/StateManagement.cpp.s
@@ -229,8 +307,7 @@ sourcefiles/StateManagement.s: sourcefiles/StateManagement.cpp.s
 
 # target to generate assembly for a file
 sourcefiles/StateManagement.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/sourcefiles/StateManagement.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/StateManagement.cpp.s
 .PHONY : sourcefiles/StateManagement.cpp.s
 
 # Help Target
@@ -241,15 +318,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Alarmlib"
 	@echo "... MainProgram"
-	@echo "... logIn"
-	@echo "... stateManagement"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... sourcefiles/LogIn.o"
-	@echo "... sourcefiles/LogIn.i"
-	@echo "... sourcefiles/LogIn.s"
+	@echo "... sourcefiles/Camera.o"
+	@echo "... sourcefiles/Camera.i"
+	@echo "... sourcefiles/Camera.s"
+	@echo "... sourcefiles/IntrusionDetector.o"
+	@echo "... sourcefiles/IntrusionDetector.i"
+	@echo "... sourcefiles/IntrusionDetector.s"
+	@echo "... sourcefiles/Login.o"
+	@echo "... sourcefiles/Login.i"
+	@echo "... sourcefiles/Login.s"
+	@echo "... sourcefiles/Sensors.o"
+	@echo "... sourcefiles/Sensors.i"
+	@echo "... sourcefiles/Sensors.s"
+	@echo "... sourcefiles/SharedData.o"
+	@echo "... sourcefiles/SharedData.i"
+	@echo "... sourcefiles/SharedData.s"
 	@echo "... sourcefiles/StateManagement.o"
 	@echo "... sourcefiles/StateManagement.i"
 	@echo "... sourcefiles/StateManagement.s"

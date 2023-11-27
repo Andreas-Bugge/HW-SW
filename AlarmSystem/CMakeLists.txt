@@ -1,11 +1,23 @@
 cmake_minimum_required(VERSION 3.12)
 project(AlarmSystem VERSION 1.0.0)
+set(CMAKE_CXX_STANDARD 11)
 
-# Tilføj bibliotek
-add_library(logIn sourcefiles/LogIn.cpp)
+# Define the source files for Alarmlib
+set(LIBRARY_SOURCES
+    sourcefiles/Login.cpp
+    sourcefiles/StateManagement.cpp
+    sourcefiles/Sensors.cpp
+    sourcefiles/Camera.cpp
+    sourcefiles/SharedData.cpp
+    sourcefiles/IntrusionDetector.cpp
+)
 
-# Tilføj hovedprogrammet
+# Add library
+add_library(Alarmlib ${LIBRARY_SOURCES})
+
+# Add main program
 add_executable(MainProgram main.cpp)
 
-# Link biblioteket med hovedprogrammet
-target_link_libraries(MainProgram logIn)
+# Link the library with the main program
+target_link_libraries(MainProgram Alarmlib)
+ 

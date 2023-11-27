@@ -1,5 +1,6 @@
-CMakeFiles/MainProgram.dir/main.cpp.o: \
-  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp \
+CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.o: \
+  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/IntrusionDetector.cpp \
+  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/../headerfiles/IntrusionDetector.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__config \
@@ -791,12 +792,8 @@ CMakeFiles/MainProgram.dir/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/thread \
-  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/headerfiles/LogIn.h \
-  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/headerfiles/StateManagement.h \
-  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/headerfiles/Sensors.h \
-  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/headerfiles/Camera.h \
-  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/headerfiles/SharedData.h \
-  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/headerfiles/IntrusionDetector.h \
-  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/headerfiles/../headerfiles/SharedData.h \
-  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/headerfiles/../headerfiles/StateManagement.h \
-  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/headerfiles/../headerfiles/LogIn.h
+  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/../headerfiles/../headerfiles/SharedData.h \
+  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/../headerfiles/Sensors.h \
+  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/../headerfiles/Camera.h \
+  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/../headerfiles/../headerfiles/StateManagement.h \
+  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/../headerfiles/../headerfiles/LogIn.h
