@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -41,7 +43,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MainProgram::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MainProgram-Debug-17889de93f0701c40024.json",
+					"jsonFile" : "target-MainProgram-Debug-02a2f7beeb873eed313e.json",
 					"name" : "MainProgram",
 					"projectIndex" : 0
 				},
@@ -50,6 +52,13 @@
 					"id" : "logIn::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-logIn-Debug-6bb2be8c687c3d238ead.json",
 					"name" : "logIn",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stateManagement::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stateManagement-Debug-3f10f9918b4ab9a57fbd.json",
+					"name" : "stateManagement",
 					"projectIndex" : 0
 				}
 			]

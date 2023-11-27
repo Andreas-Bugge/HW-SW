@@ -130,6 +130,19 @@ logIn/fast:
 .PHONY : logIn/fast
 
 #=============================================================================
+# Target rules for targets named stateManagement
+
+# Build rule for target.
+stateManagement: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stateManagement
+.PHONY : stateManagement
+
+# fast build rule for target.
+stateManagement/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/build
+.PHONY : stateManagement/fast
+
+#=============================================================================
 # Target rules for targets named MainProgram
 
 # Build rule for target.
@@ -193,6 +206,33 @@ sourcefiles/LogIn.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.s
 .PHONY : sourcefiles/LogIn.cpp.s
 
+sourcefiles/StateManagement.o: sourcefiles/StateManagement.cpp.o
+.PHONY : sourcefiles/StateManagement.o
+
+# target to build an object file
+sourcefiles/StateManagement.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/sourcefiles/StateManagement.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.o
+.PHONY : sourcefiles/StateManagement.cpp.o
+
+sourcefiles/StateManagement.i: sourcefiles/StateManagement.cpp.i
+.PHONY : sourcefiles/StateManagement.i
+
+# target to preprocess a source file
+sourcefiles/StateManagement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/sourcefiles/StateManagement.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.i
+.PHONY : sourcefiles/StateManagement.cpp.i
+
+sourcefiles/StateManagement.s: sourcefiles/StateManagement.cpp.s
+.PHONY : sourcefiles/StateManagement.s
+
+# target to generate assembly for a file
+sourcefiles/StateManagement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/sourcefiles/StateManagement.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/StateManagement.cpp.s
+.PHONY : sourcefiles/StateManagement.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -203,12 +243,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... MainProgram"
 	@echo "... logIn"
+	@echo "... stateManagement"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... sourcefiles/LogIn.o"
 	@echo "... sourcefiles/LogIn.i"
 	@echo "... sourcefiles/LogIn.s"
+	@echo "... sourcefiles/StateManagement.o"
+	@echo "... sourcefiles/StateManagement.i"
+	@echo "... sourcefiles/StateManagement.s"
 .PHONY : help
 
 

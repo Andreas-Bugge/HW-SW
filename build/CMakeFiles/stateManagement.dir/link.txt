@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstateManagement.a CMakeFiles/stateManagement.dir/sourcefiles/StateManagement.cpp.o
+/usr/bin/ranlib libstateManagement.a

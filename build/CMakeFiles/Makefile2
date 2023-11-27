@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /Users/mathiesschou/Desktop/HW-SW/build
 
 # The main recursive "all" target.
 all: CMakeFiles/logIn.dir/all
+all: CMakeFiles/stateManagement.dir/all
 all: CMakeFiles/MainProgram.dir/all
 .PHONY : all
 
@@ -73,6 +74,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/logIn.dir/clean
+clean: CMakeFiles/stateManagement.dir/clean
 clean: CMakeFiles/MainProgram.dir/clean
 .PHONY : clean
 
@@ -83,7 +85,7 @@ clean: CMakeFiles/MainProgram.dir/clean
 CMakeFiles/logIn.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=4,5 "Built target logIn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=5,6 "Built target logIn"
 .PHONY : CMakeFiles/logIn.dir/all
 
 # Build rule for subdir invocation for target.
@@ -103,18 +105,44 @@ CMakeFiles/logIn.dir/clean:
 .PHONY : CMakeFiles/logIn.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/stateManagement.dir
+
+# All Build rule for target.
+CMakeFiles/stateManagement.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=7,8 "Built target stateManagement"
+.PHONY : CMakeFiles/stateManagement.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/stateManagement.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stateManagement.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 0
+.PHONY : CMakeFiles/stateManagement.dir/rule
+
+# Convenience name for target.
+stateManagement: CMakeFiles/stateManagement.dir/rule
+.PHONY : stateManagement
+
+# clean rule for target.
+CMakeFiles/stateManagement.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stateManagement.dir/build.make CMakeFiles/stateManagement.dir/clean
+.PHONY : CMakeFiles/stateManagement.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/MainProgram.dir
 
 # All Build rule for target.
 CMakeFiles/MainProgram.dir/all: CMakeFiles/logIn.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=1,2,3 "Built target MainProgram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=1,2,3,4 "Built target MainProgram"
 .PHONY : CMakeFiles/MainProgram.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MainProgram.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MainProgram.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 0
 .PHONY : CMakeFiles/MainProgram.dir/rule
