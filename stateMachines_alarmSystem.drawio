@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-27T09:49:01.767Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="bx0p2_eNHXyXP1KglUQD" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-27T09:49:36.238Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="1-HjPkOpsFFdTjW9F9gM" version="22.1.4" type="github">
   <diagram id="07fea595-8f29-1299-0266-81d95cde20df" name="Page-1">
     <mxGraphModel dx="1302" dy="1285" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
@@ -81,7 +81,7 @@
         <mxCell id="BD7Ygz-sJtCW-BqWoPz--303" value="&amp;nbsp;Initialization failed&amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="780" y="125" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BD7Ygz-sJtCW-BqWoPz--305" value="Validate pin code" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="BD7Ygz-sJtCW-BqWoPz--305" value="Initialization start" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="990" y="155" width="140" height="130" as="geometry" />
         </mxCell>
         <mxCell id="BD7Ygz-sJtCW-BqWoPz--309" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BD7Ygz-sJtCW-BqWoPz--303" target="BD7Ygz-sJtCW-BqWoPz--255">
