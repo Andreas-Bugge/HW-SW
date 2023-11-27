@@ -172,6 +172,7 @@ sourcefiles/LogIn.o: sourcefiles/LogIn.cpp.o
 # target to build an object file
 sourcefiles/LogIn.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/sourcefiles/LogIn.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.o
 .PHONY : sourcefiles/LogIn.cpp.o
 
 sourcefiles/LogIn.i: sourcefiles/LogIn.cpp.i
@@ -180,6 +181,7 @@ sourcefiles/LogIn.i: sourcefiles/LogIn.cpp.i
 # target to preprocess a source file
 sourcefiles/LogIn.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/sourcefiles/LogIn.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.i
 .PHONY : sourcefiles/LogIn.cpp.i
 
 sourcefiles/LogIn.s: sourcefiles/LogIn.cpp.s
@@ -188,6 +190,7 @@ sourcefiles/LogIn.s: sourcefiles/LogIn.cpp.s
 # target to generate assembly for a file
 sourcefiles/LogIn.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/sourcefiles/LogIn.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/sourcefiles/LogIn.cpp.s
 .PHONY : sourcefiles/LogIn.cpp.s
 
 # Help Target

@@ -83,7 +83,7 @@ clean: CMakeFiles/MainProgram.dir/clean
 CMakeFiles/logIn.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logIn.dir/build.make CMakeFiles/logIn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=3,4 "Built target logIn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=4,5 "Built target logIn"
 .PHONY : CMakeFiles/logIn.dir/all
 
 # Build rule for subdir invocation for target.
@@ -109,12 +109,12 @@ CMakeFiles/logIn.dir/clean:
 CMakeFiles/MainProgram.dir/all: CMakeFiles/logIn.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=1,2 "Built target MainProgram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=1,2,3 "Built target MainProgram"
 .PHONY : CMakeFiles/MainProgram.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MainProgram.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MainProgram.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles 0
 .PHONY : CMakeFiles/MainProgram.dir/rule
