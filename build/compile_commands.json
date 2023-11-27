@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/mathiesschou/Desktop/HW-SW/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/logIn.dir/sourcefiles/LogIn.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/LogIn.cpp",
+  "file": "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/LogIn.cpp",
+  "output": "CMakeFiles/logIn.dir/sourcefiles/LogIn.cpp.o"
+},
+{
+  "directory": "/Users/mathiesschou/Desktop/HW-SW/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/MainProgram.dir/main.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp",
+  "file": "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp",
+  "output": "CMakeFiles/MainProgram.dir/main.cpp.o"
+}
+]

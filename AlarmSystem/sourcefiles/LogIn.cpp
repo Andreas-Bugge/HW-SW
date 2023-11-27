@@ -1,11 +1,16 @@
-#include "LogIn.h"
-#include <cstdlib> // For rand() and srand()
-#include <ctime> // For time()
+#include "../headerfiles/LogIn.h"
 
-// Constructor definition
+#include <cstdlib> 
+#include <ctime> 
+
+
 LogIn::LogIn() : active(false) {
     //* Initialize the random number generator
     srand(static_cast<unsigned int>(time(nullptr)));
+}
+
+LogIn::~LogIn() {
+    
 }
 
 bool LogIn::valid(int P) {
@@ -18,4 +23,9 @@ void LogIn::activateSystem(int P) {
     if (valid(P)) {
         active = true;
     }
+}
+
+bool LogIn::isActive() {
+    //* Return the state of the system
+    return active;
 }

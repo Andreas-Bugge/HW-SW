@@ -3,14 +3,15 @@
 
 class LogIn {
 public:
-    LogIn(); // Constructor
-    ~LogIn(); // Destructor
+    LogIn();
+    ~LogIn();
 
-    bool valid(int P);
-    void activateSystem(int P);
+    bool valid(int P); 
+    void activateSystem(int P); 
+    bool isActive(); 
 
 private:
-    bool active;
+    bool active; // Holds the state of the system
 };
 
 #endif // LOGIN_H

@@ -1,0 +1,4 @@
+/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles/logIn.dir
+/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles/MainProgram.dir
+/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles/edit_cache.dir
+/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles/rebuild_cache.dir

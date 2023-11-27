@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblogIn.a CMakeFiles/logIn.dir/sourcefiles/LogIn.cpp.o
+/usr/bin/ranlib liblogIn.a
