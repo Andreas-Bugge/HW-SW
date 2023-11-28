@@ -1,10 +1,5 @@
 #include "../headerfiles/SharedData.h"
 
-#include <thread>
-#include <chrono>
-
-//#include "../headerfiles/Sensors.h"
-//#include "../headerfiles/Camera.h"
 
 SharedData::SharedData() : sensorSum(0) {}
 SharedData::~SharedData() {}

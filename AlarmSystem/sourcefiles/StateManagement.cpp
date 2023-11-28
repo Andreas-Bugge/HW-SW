@@ -1,8 +1,5 @@
 #include "../headerfiles/StateManagement.h"
 
-#include <iostream>
-
-
 StateManagement::StateManagement() : systemActive(false) {   
 }
 

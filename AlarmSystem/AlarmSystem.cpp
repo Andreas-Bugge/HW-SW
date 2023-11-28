@@ -10,23 +10,23 @@
 #include "headerfiles/Camera.h"
 #include "headerfiles/SharedData.h"
 #include "headerfiles/IntrusionDetector.h"
+#include "headerfiles/LCG.h"
 
 int main() {
-    srand(static_cast<unsigned int>(time(nullptr)));
-
     StateManagement stateManager;
     LogIn loginSystem;
     Sensors sensor1, sensor2;
     Camera camera;
     SharedData sharedData;
     IntrusionDetector intrusionDetector;
+    LCG randomGen;    
 
     std::cout << "Alarm system is active ? \n" << stateManager.isSystemActive() << "\n" << std::endl;
 
 
     //! System state: Inactive - logging in
     while (true) {
-        int P = rand() % 10; 
+        int P = randomGen.next() % 10; 
         std::cout << "Generated pin: " << P << std::endl;
 
         if(loginSystem.isValid(P)) {
@@ -38,6 +38,8 @@ int main() {
             std::cout << "Pin is invalid. System remains inactive." << std::endl;
         }
     }
+
+    std::cout << "Pin code has been provided. Systemstate is active: \n" << stateManager.isSystemActive() << "\n" << std::endl;
 
     std::thread sensorThread(sensorTask, std::ref(sharedData), std::ref(sensor1), std::ref(sensor2));
     std::thread cameraThread(cameraTask, std::ref(sharedData), std::ref(camera));
@@ -51,12 +53,12 @@ int main() {
             std::cout << "Intrusion detected! Activating alarm." << std::endl;
             stateManager.activateAlarm();
             intrusionDetector.handleIntrusion(stateManager, loginSystem);
-        } else {
-            std::cout << "Ingen indtrængen detekteret." << std::endl;
+        } else { 
+            /*std::cout << "Ingen indtrængen detekteret." << std::endl;*/
         }
     
 
-    //! Print statements for sensor- and camera data
+    //! Print statements for sensor- and camera-data
     /*
     std::cout << "Sensor Sum: " << sensorSum << "\n";
 
@@ -67,10 +69,11 @@ int main() {
         }
         std::cout << "\n";
     }
-
+    */
+   //! Print statements for sensor- and camera-data 1 second breaks
     std::cout << "\n"; 
         std::this_thread::sleep_for(std::chrono::seconds(1));
-    */
+    
     }
     
     sensorThread.join();

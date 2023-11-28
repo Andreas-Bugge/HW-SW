@@ -3,6 +3,8 @@
 
 #include <mutex>
 #include <vector>
+#include <thread>
+#include <chrono>
 #include "Sensors.h" 
 #include "Camera.h"  
 

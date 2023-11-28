@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MainProgram.dir/main.cpp.o"
-  "CMakeFiles/MainProgram.dir/main.cpp.o.d"
+  "CMakeFiles/MainProgram.dir/AlarmSystem.cpp.o"
+  "CMakeFiles/MainProgram.dir/AlarmSystem.cpp.o.d"
   "MainProgram"
   "MainProgram.pdb"
 )

@@ -5,6 +5,7 @@
 #include <vector>
 #include <thread>
 #include <chrono>
+#include <future>
 #include "../headerfiles/SharedData.h"
 #include "../headerfiles/StateManagement.h"
 #include "../headerfiles/LogIn.h"

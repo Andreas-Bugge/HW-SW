@@ -1,44 +1,50 @@
 [
 {
   "directory": "/Users/mathiesschou/Desktop/HW-SW/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/Login.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/Login.cpp",
+  "command": "/usr/bin/clang++   -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/Login.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/Login.cpp",
   "file": "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/Login.cpp",
   "output": "CMakeFiles/Alarmlib.dir/sourcefiles/Login.cpp.o"
 },
 {
   "directory": "/Users/mathiesschou/Desktop/HW-SW/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/StateManagement.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/StateManagement.cpp",
+  "command": "/usr/bin/clang++   -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/StateManagement.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/StateManagement.cpp",
   "file": "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/StateManagement.cpp",
   "output": "CMakeFiles/Alarmlib.dir/sourcefiles/StateManagement.cpp.o"
 },
 {
   "directory": "/Users/mathiesschou/Desktop/HW-SW/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/Sensors.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/Sensors.cpp",
+  "command": "/usr/bin/clang++   -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/Sensors.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/Sensors.cpp",
   "file": "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/Sensors.cpp",
   "output": "CMakeFiles/Alarmlib.dir/sourcefiles/Sensors.cpp.o"
 },
 {
   "directory": "/Users/mathiesschou/Desktop/HW-SW/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/Camera.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/Camera.cpp",
+  "command": "/usr/bin/clang++   -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/Camera.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/Camera.cpp",
   "file": "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/Camera.cpp",
   "output": "CMakeFiles/Alarmlib.dir/sourcefiles/Camera.cpp.o"
 },
 {
   "directory": "/Users/mathiesschou/Desktop/HW-SW/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/SharedData.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/SharedData.cpp",
+  "command": "/usr/bin/clang++   -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/SharedData.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/SharedData.cpp",
   "file": "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/SharedData.cpp",
   "output": "CMakeFiles/Alarmlib.dir/sourcefiles/SharedData.cpp.o"
 },
 {
   "directory": "/Users/mathiesschou/Desktop/HW-SW/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/IntrusionDetector.cpp",
+  "command": "/usr/bin/clang++   -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/IntrusionDetector.cpp",
   "file": "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/IntrusionDetector.cpp",
   "output": "CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.o"
 },
 {
   "directory": "/Users/mathiesschou/Desktop/HW-SW/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/MainProgram.dir/main.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp",
-  "file": "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp",
-  "output": "CMakeFiles/MainProgram.dir/main.cpp.o"
+  "command": "/usr/bin/clang++   -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/Alarmlib.dir/sourcefiles/LCG.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/LCG.cpp",
+  "file": "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/LCG.cpp",
+  "output": "CMakeFiles/Alarmlib.dir/sourcefiles/LCG.cpp.o"
+},
+{
+  "directory": "/Users/mathiesschou/Desktop/HW-SW/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/MainProgram.dir/AlarmSystem.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/AlarmSystem.cpp",
+  "file": "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/AlarmSystem.cpp",
+  "output": "CMakeFiles/MainProgram.dir/AlarmSystem.cpp.o"
 }
 ]

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Alarmlib.dir/sourcefiles/Camera.cpp.o.d"
   "CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.o"
   "CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.o.d"
+  "CMakeFiles/Alarmlib.dir/sourcefiles/LCG.cpp.o"
+  "CMakeFiles/Alarmlib.dir/sourcefiles/LCG.cpp.o.d"
   "CMakeFiles/Alarmlib.dir/sourcefiles/Login.cpp.o"
   "CMakeFiles/Alarmlib.dir/sourcefiles/Login.cpp.o.d"
   "CMakeFiles/Alarmlib.dir/sourcefiles/Sensors.cpp.o"

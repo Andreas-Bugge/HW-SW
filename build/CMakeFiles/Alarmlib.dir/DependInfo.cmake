@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/Camera.cpp" "CMakeFiles/Alarmlib.dir/sourcefiles/Camera.cpp.o" "gcc" "CMakeFiles/Alarmlib.dir/sourcefiles/Camera.cpp.o.d"
   "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/IntrusionDetector.cpp" "CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.o" "gcc" "CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.o.d"
+  "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/LCG.cpp" "CMakeFiles/Alarmlib.dir/sourcefiles/LCG.cpp.o" "gcc" "CMakeFiles/Alarmlib.dir/sourcefiles/LCG.cpp.o.d"
   "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/Login.cpp" "CMakeFiles/Alarmlib.dir/sourcefiles/Login.cpp.o" "gcc" "CMakeFiles/Alarmlib.dir/sourcefiles/Login.cpp.o.d"
   "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/Sensors.cpp" "CMakeFiles/Alarmlib.dir/sourcefiles/Sensors.cpp.o" "gcc" "CMakeFiles/Alarmlib.dir/sourcefiles/Sensors.cpp.o.d"
   "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/SharedData.cpp" "CMakeFiles/Alarmlib.dir/sourcefiles/SharedData.cpp.o" "gcc" "CMakeFiles/Alarmlib.dir/sourcefiles/SharedData.cpp.o.d"

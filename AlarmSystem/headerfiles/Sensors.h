@@ -1,5 +1,6 @@
 #ifndef SENSORS_H
 #define SENSORS_H
+#include <iostream>
 
 class Sensors {
     public:

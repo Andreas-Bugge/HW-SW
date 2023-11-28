@@ -10,13 +10,14 @@ set(LIBRARY_SOURCES
     sourcefiles/Camera.cpp
     sourcefiles/SharedData.cpp
     sourcefiles/IntrusionDetector.cpp
+    sourcefiles/LCG.cpp
 )
 
 # Add library
 add_library(Alarmlib ${LIBRARY_SOURCES})
 
 # Add main program
-add_executable(MainProgram main.cpp)
+add_executable(MainProgram AlarmSystem.cpp)
 
 # Link the library with the main program
 target_link_libraries(MainProgram Alarmlib)

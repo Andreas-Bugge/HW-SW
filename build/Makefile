@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.27.8/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.27.8/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.27.8/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.27.8/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/mathiesschou/Desktop/HW-SW/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/opt/homebrew/Cellar/cmake/3.27.8/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.27.8/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/opt/homebrew/Cellar/cmake/3.27.8/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.27.8/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -142,29 +142,29 @@ MainProgram/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/build
 .PHONY : MainProgram/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+AlarmSystem.o: AlarmSystem.cpp.o
+.PHONY : AlarmSystem.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/main.cpp.o
-.PHONY : main.cpp.o
+AlarmSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/AlarmSystem.cpp.o
+.PHONY : AlarmSystem.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+AlarmSystem.i: AlarmSystem.cpp.i
+.PHONY : AlarmSystem.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/main.cpp.i
-.PHONY : main.cpp.i
+AlarmSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/AlarmSystem.cpp.i
+.PHONY : AlarmSystem.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+AlarmSystem.s: AlarmSystem.cpp.s
+.PHONY : AlarmSystem.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/main.cpp.s
-.PHONY : main.cpp.s
+AlarmSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/AlarmSystem.cpp.s
+.PHONY : AlarmSystem.cpp.s
 
 sourcefiles/Camera.o: sourcefiles/Camera.cpp.o
 .PHONY : sourcefiles/Camera.o
@@ -213,6 +213,30 @@ sourcefiles/IntrusionDetector.s: sourcefiles/IntrusionDetector.cpp.s
 sourcefiles/IntrusionDetector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.s
 .PHONY : sourcefiles/IntrusionDetector.cpp.s
+
+sourcefiles/LCG.o: sourcefiles/LCG.cpp.o
+.PHONY : sourcefiles/LCG.o
+
+# target to build an object file
+sourcefiles/LCG.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/LCG.cpp.o
+.PHONY : sourcefiles/LCG.cpp.o
+
+sourcefiles/LCG.i: sourcefiles/LCG.cpp.i
+.PHONY : sourcefiles/LCG.i
+
+# target to preprocess a source file
+sourcefiles/LCG.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/LCG.cpp.i
+.PHONY : sourcefiles/LCG.cpp.i
+
+sourcefiles/LCG.s: sourcefiles/LCG.cpp.s
+.PHONY : sourcefiles/LCG.s
+
+# target to generate assembly for a file
+sourcefiles/LCG.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Alarmlib.dir/build.make CMakeFiles/Alarmlib.dir/sourcefiles/LCG.cpp.s
+.PHONY : sourcefiles/LCG.cpp.s
 
 sourcefiles/Login.o: sourcefiles/Login.cpp.o
 .PHONY : sourcefiles/Login.o
@@ -320,15 +344,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Alarmlib"
 	@echo "... MainProgram"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... AlarmSystem.o"
+	@echo "... AlarmSystem.i"
+	@echo "... AlarmSystem.s"
 	@echo "... sourcefiles/Camera.o"
 	@echo "... sourcefiles/Camera.i"
 	@echo "... sourcefiles/Camera.s"
 	@echo "... sourcefiles/IntrusionDetector.o"
 	@echo "... sourcefiles/IntrusionDetector.i"
 	@echo "... sourcefiles/IntrusionDetector.s"
+	@echo "... sourcefiles/LCG.o"
+	@echo "... sourcefiles/LCG.i"
+	@echo "... sourcefiles/LCG.s"
 	@echo "... sourcefiles/Login.o"
 	@echo "... sourcefiles/Login.i"
 	@echo "... sourcefiles/Login.s"

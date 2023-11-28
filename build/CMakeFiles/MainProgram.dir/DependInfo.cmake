@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp" "CMakeFiles/MainProgram.dir/main.cpp.o" "gcc" "CMakeFiles/MainProgram.dir/main.cpp.o.d"
+  "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem/AlarmSystem.cpp" "CMakeFiles/MainProgram.dir/AlarmSystem.cpp.o" "gcc" "CMakeFiles/MainProgram.dir/AlarmSystem.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

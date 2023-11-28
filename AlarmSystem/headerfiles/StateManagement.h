@@ -1,6 +1,8 @@
 #ifndef STATEMANAGEMENT_H
 #define STATEMANAGEMENT_H
 
+#include <iostream>
+
 class StateManagement {
     public:
         StateManagement();
