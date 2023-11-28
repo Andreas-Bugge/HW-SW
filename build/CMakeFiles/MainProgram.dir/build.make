@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.27.8/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.27.8/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.27.8/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.27.8/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -73,15 +73,15 @@ CMakeFiles/MainProgram.dir/main.cpp.o: CMakeFiles/MainProgram.dir/flags.make
 CMakeFiles/MainProgram.dir/main.cpp.o: /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp
 CMakeFiles/MainProgram.dir/main.cpp.o: CMakeFiles/MainProgram.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mathiesschou/Desktop/HW-SW/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MainProgram.dir/main.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MainProgram.dir/main.cpp.o -MF CMakeFiles/MainProgram.dir/main.cpp.o.d -o CMakeFiles/MainProgram.dir/main.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MainProgram.dir/main.cpp.o -MF CMakeFiles/MainProgram.dir/main.cpp.o.d -o CMakeFiles/MainProgram.dir/main.cpp.o -c /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp
 
 CMakeFiles/MainProgram.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MainProgram.dir/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp > CMakeFiles/MainProgram.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp > CMakeFiles/MainProgram.dir/main.cpp.i
 
 CMakeFiles/MainProgram.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MainProgram.dir/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp -o CMakeFiles/MainProgram.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/main.cpp -o CMakeFiles/MainProgram.dir/main.cpp.s
 
 # Object files for target MainProgram
 MainProgram_OBJECTS = \

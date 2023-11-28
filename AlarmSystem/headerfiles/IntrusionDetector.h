@@ -18,8 +18,9 @@ public:
 
     void handleIntrusion(StateManagement& stateManager, LogIn& loginSystem);
 
-private:
     bool isIntrusionDetected(const std::vector<std::vector<int>>& cameraData, int sensorSum);
+private:
+    
     bool alarmTriggered;
 };
 

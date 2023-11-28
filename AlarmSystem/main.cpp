@@ -51,26 +51,34 @@ int main() {
             std::cout << "Intrusion detected! Activating alarm." << std::endl;
             stateManager.activateAlarm();
             intrusionDetector.handleIntrusion(stateManager, loginSystem);
+            if (!stateManager.isSystemActive()) {
+                stateManager.activateSystem(true);
+            }
+        } else {
+            std::cout << "Ingen indtrængen detekteret." << std::endl;
         }
     
 
     //! Print statements
-    /*std::cout << "Sensor Sum: " << sensorSum << "\n";
+    
+    std::cout << "Sensor Sum: " << sensorSum << "\n";
 
     std::cout << "Camera Data:\n";
     for (const auto& row : cameraData) {
         for (int val : row) {
             std::cout << val << " ";
         }
-        std::cout << "\n"; // Newline after each row
+        std::cout << "\n";
     }
 
     std::cout << "\n"; 
-        std::this_thread::sleep_for(std::chrono::milliseconds(60)); */
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+
     }
     
     sensorThread.join();
     cameraThread.join();
+
 
     return 0;
 }

@@ -30,10 +30,16 @@ int SharedData::getSensorSum() const {
 }
 
 void sensorTask(SharedData& sharedData, Sensors& sensor1, Sensors& sensor2) {
+    int sum = 0;
+
     while (true) {
-        int sum = sensor1.data() + sensor2.data();
-        sharedData.setSensorSum(sum);
+        sum += sensor1.data() + sensor2.data();
         std::this_thread::sleep_for(std::chrono::milliseconds(60));
+
+        sum += sensor1.data() + sensor2.data();
+        sharedData.setSensorSum(sum);
+        
+        sum = 0;
     }
 }
 

@@ -1,6 +1,10 @@
 #ifndef LOGIN_H
 #define LOGIN_H
 
+#include <iostream>
+#include <thread>
+#include <chrono>
+
 class LogIn {
 public:
     LogIn();
@@ -8,7 +12,7 @@ public:
 
     bool isValid(int P); 
 
-    int promptForPin();
+    bool checkForValidPin();
 };
 
 #endif // LOGIN_H

@@ -18,8 +18,20 @@ bool LogIn::isValid(int P) {
     }
 }
 
-int LogIn::promptForPin() {
-    int enteredPin = rand() % 10;
-    isValid(enteredPin);
-    return enteredPin;
+bool LogIn::checkForValidPin() {
+    int attempts = 0;
+    while (attempts < 3) {  // Giver op til 3 forsøg
+        int pin;
+        std::cout << "Enter pin: ";
+        std::cin >> pin;
+
+        if (this->isValid(pin)) {  // Bruger 'this' pointeren til at kalde 'isValid'
+            return true;
+        }
+
+        attempts++;
+        std::this_thread::sleep_for(std::chrono::seconds(2)); // Venter 3 sekunder før næste forsøg
+    }
+
+    return false;
 }
