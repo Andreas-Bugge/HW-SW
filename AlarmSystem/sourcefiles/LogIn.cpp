@@ -18,20 +18,22 @@ bool LogIn::isValid(int P) {
     }
 }
 
-bool LogIn::checkForValidPin() {
-    int attempts = 0;
-    while (attempts < 3) {  // Giver op til 3 forsøg
-        int pin;
-        std::cout << "Enter pin: ";
-        std::cin >> pin;
+bool LogIn::autoCheckPin() {
+    while (true) {
+        int generatedPin = rand() % 10; // Genererer et tilfældigt tal mellem 0 og 9
+        std::cout << "Auto-generated pin: " << generatedPin << std::endl;
 
-        if (this->isValid(pin)) {  // Bruger 'this' pointeren til at kalde 'isValid'
+        if (this->isValid(generatedPin)) {
+            std::cout << "Valid pin entered." << std::endl;
             return true;
+        } else {
+            std::cout << "Invalid pin." << std::endl;
         }
 
-        attempts++;
-        std::this_thread::sleep_for(std::chrono::seconds(2)); // Venter 3 sekunder før næste forsøg
+        /*
+        std::this_thread::sleep_for(std::chrono::seconds(4)); // Venter 4 sekunder før næste forsøg
+        */
     }
-
-    return false;
 }
+
+

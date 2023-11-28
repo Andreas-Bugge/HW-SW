@@ -797,4 +797,5 @@ CMakeFiles/Alarmlib.dir/sourcefiles/IntrusionDetector.cpp.o: \
   /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/../headerfiles/Sensors.h \
   /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/../headerfiles/Camera.h \
   /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/../headerfiles/../headerfiles/StateManagement.h \
-  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/../headerfiles/../headerfiles/LogIn.h
+  /Users/mathiesschou/Desktop/HW-SW/AlarmSystem/sourcefiles/../headerfiles/../headerfiles/LogIn.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/future

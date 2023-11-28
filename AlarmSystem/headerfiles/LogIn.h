@@ -12,7 +12,7 @@ public:
 
     bool isValid(int P); 
 
-    bool checkForValidPin();
+    bool autoCheckPin();
 };
 
 #endif // LOGIN_H

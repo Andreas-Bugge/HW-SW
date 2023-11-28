@@ -24,15 +24,32 @@ bool IntrusionDetector::isIntrusionDetected(const std::vector<std::vector<int>>&
     return sum >= 6290;
 }
 
+#include <future>
+
 void IntrusionDetector::handleIntrusion(StateManagement& stateManager, LogIn& loginSystem) {
     if (!alarmTriggered) {
         alarmTriggered = true;
         stateManager.activateAlarm(); 
 
-        std::cout << "Intrusion found. Enter valid pin or wait 10 seconds." << std::endl;
-        //loginSystem.checkForValidPin();
-        
+        auto pinCheckFuture = std::async(std::launch::async, [&]{
+            return loginSystem.autoCheckPin();
+        });
+
+        for (int i = 10; i > 0; --i) {
+            std::cout << "Intrusion found. Auto-checking pin, wait " << i << " seconds." << std::endl;
+            if (pinCheckFuture.wait_for(std::chrono::seconds(1)) == std::future_status::ready) {
+                if (pinCheckFuture.get()) {
+                    std::cout << "Correct pin entered, deactivating alarm." << std::endl;
+                    alarmTriggered = false;
+                    stateManager.activateSystem(true);
+                    return;
+                }
+            }
+        }
+
+        std::cout << "Failed to enter correct pin, alarm continues." << std::endl;
         alarmTriggered = false;
         stateManager.activateSystem(true);
     }
 }
+
