@@ -1,5 +1,7 @@
 #include "../headerfiles/LCG.h"
 
+#include <ctime>
+
 LCG::LCG() {
     current = time(NULL);
     a = 1664525;

@@ -1,0 +1,4 @@
+/Users/mathiesschou/Documents/GitHub/HW-SW/AlarmSystem/build/CMakeFiles/Alarmlib.dir
+/Users/mathiesschou/Documents/GitHub/HW-SW/AlarmSystem/build/CMakeFiles/MainProgram.dir
+/Users/mathiesschou/Documents/GitHub/HW-SW/AlarmSystem/build/CMakeFiles/edit_cache.dir
+/Users/mathiesschou/Documents/GitHub/HW-SW/AlarmSystem/build/CMakeFiles/rebuild_cache.dir

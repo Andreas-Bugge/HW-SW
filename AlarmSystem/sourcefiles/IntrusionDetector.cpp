@@ -21,7 +21,8 @@ bool IntrusionDetector::isIntrusionDetected(const std::vector<std::vector<int>>&
     }
 
     //! Print data for samlet sum af sensor og kamera data
-    /* std::cout << "Samlet sum: " << sum << ". Tærskel for indtrængen: 6290." << std::endl; */
+    /*
+    std::cout << "Samlet sum: " << sum << ". Tærskel for indtrængen: 6290." << std::endl;  */
     return sum >= 6290;
 }
 

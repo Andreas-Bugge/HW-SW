@@ -4,7 +4,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 # Define the source files for Alarmlib
 set(LIBRARY_SOURCES
-    sourcefiles/Login.cpp
+    sourcefiles/PinCode.cpp
     sourcefiles/StateManagement.cpp
     sourcefiles/Sensors.cpp
     sourcefiles/Camera.cpp
