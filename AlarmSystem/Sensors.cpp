@@ -1,6 +1,6 @@
-#include "../headerfiles/Sensors.h"
-#include "../headerfiles/StateManagement.h"
-#include "../headerfiles/LCG.h"
+#include "Sensors.h"
+#include "StateManagement.h"
+#include "LCG.h"
 
 Sensors::Sensors() {
 }

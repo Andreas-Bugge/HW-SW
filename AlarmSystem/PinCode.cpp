@@ -1,5 +1,5 @@
-#include "../headerfiles/PinCode.h"
-#include "../headerfiles/LCG.h"
+#include "PinCode.h"
+#include "LCG.h"
 
 LogIn::LogIn() {
 }

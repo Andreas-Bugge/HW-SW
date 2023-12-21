@@ -4,13 +4,13 @@
 #include <thread>
 
 //* Headerfiles
-#include "headerfiles/PinCode.h"
-#include "headerfiles/StateManagement.h"
-#include "headerfiles/Sensors.h"
-#include "headerfiles/Camera.h"
-#include "headerfiles/SharedData.h"
-#include "headerfiles/IntrusionDetector.h"
-#include "headerfiles/LCG.h"
+#include "PinCode.h"
+#include "StateManagement.h"
+#include "Sensors.h"
+#include "Camera.h"
+#include "SharedData.h"
+#include "IntrusionDetector.h"
+#include "LCG.h"
 
 
 bool tryActivateSystem(StateManagement& stateManager, LogIn& loginSystem, LCG& randomGen) {

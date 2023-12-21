@@ -1,4 +1,4 @@
-#include "../headerfiles/SharedData.h"
+#include "SharedData.h"
 
 
 SharedData::SharedData() : sensorSum(0) {}

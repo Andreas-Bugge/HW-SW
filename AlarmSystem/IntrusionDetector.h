@@ -6,9 +6,9 @@
 #include <thread>
 #include <chrono>
 #include <future>
-#include "../headerfiles/SharedData.h"
-#include "../headerfiles/StateManagement.h"
-#include "../headerfiles/PinCode.h"
+#include "SharedData.h"
+#include "StateManagement.h"
+#include "PinCode.h"
 
 class IntrusionDetector {
 public:

@@ -2,7 +2,7 @@
 #define CAMERA_H
 
 #include <vector>
-#include "../headerfiles/LCG.h"
+#include "LCG.h"
 
 class Camera {
     public:

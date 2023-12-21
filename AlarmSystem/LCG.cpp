@@ -1,4 +1,4 @@
-#include "../headerfiles/LCG.h"
+#include "LCG.h"
 
 #include <ctime>
 

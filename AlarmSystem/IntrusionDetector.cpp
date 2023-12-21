@@ -1,4 +1,4 @@
-#include "../headerfiles/IntrusionDetector.h"
+#include "IntrusionDetector.h"
 
 
 IntrusionDetector::IntrusionDetector() {}
