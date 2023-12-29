@@ -58,6 +58,7 @@ void IntrusionDetector::handleIntrusion(StateManagement& stateManager, LogIn& lo
 
         alarmTriggered = false;
         stateManager.activateSystem(true);
+        }
     }
 }
 

@@ -4,8 +4,6 @@
 #include <iostream>
 #include <vector>
 #include <thread>
-#include <chrono>
-#include <future>
 #include "SharedData.h"
 #include "StateManagement.h"
 #include "PinCode.h"

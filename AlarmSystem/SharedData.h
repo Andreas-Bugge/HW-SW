@@ -1,7 +1,6 @@
 #ifndef SHAREDDATA_H
 #define SHAREDDATA_H
 
-#include <mutex>
 #include <vector>
 #include <thread>
 #include <chrono>
@@ -19,7 +18,6 @@ public:
     int getSensorSum() const;
 
 private:
-    mutable std::mutex mutex;
     std::vector<std::vector<int>> cameraData;
     int sensorSum;
 };
