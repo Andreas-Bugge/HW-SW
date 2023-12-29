@@ -1,8 +1,6 @@
 #ifndef LCG_H
 #define LCG_H
 
-#include <ctime>
-
 class LCG {
 public:
     LCG();

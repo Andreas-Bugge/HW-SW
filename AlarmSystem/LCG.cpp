@@ -1,12 +1,9 @@
 #include "LCG.h"
 
-#include <ctime>
+static unsigned int pseudoRandomSeed = 0;
 
-LCG::LCG() {
-    current = time(NULL);
-    a = 1664525;
-    c = 1013904223;
-    m = 4294967296;
+LCG::LCG() : a(1664525), c(1013904223), m(4294967296) {
+    seed(pseudoRandomSeed++);
 }
 
 void LCG::seed(unsigned int seed) {
