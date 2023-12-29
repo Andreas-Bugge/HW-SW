@@ -1,5 +1,5 @@
 {
-    "cmake.sourceDirectory": "/Users/mathiesschou/Desktop/HW-SW/AlarmSystem",
+    "cmake.sourceDirectory": "/Users/mathiesschou/Documents/GitHub/HW-SW/AlarmSystem/sourcefiles",
     "files.associations": {
         "__bit_reference": "cpp",
         "__config": "cpp",

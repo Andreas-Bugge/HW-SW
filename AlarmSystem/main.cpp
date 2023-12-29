@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include <thread>
 
 //* Headerfiles
 #include "PinCode.h"
@@ -11,7 +10,6 @@
 #include "SharedData.h"
 #include "IntrusionDetector.h"
 #include "LCG.h"
-
 
 bool tryActivateSystem(StateManagement& stateManager, LogIn& loginSystem, LCG& randomGen) {
     int P = randomGen.next() % 10; 
@@ -26,7 +24,6 @@ bool tryActivateSystem(StateManagement& stateManager, LogIn& loginSystem, LCG& r
     }
 }
 
-
 int main() {
     StateManagement stateManager;
     LogIn loginSystem;
@@ -36,48 +33,66 @@ int main() {
     IntrusionDetector intrusionDetector;
     LCG randomGen;    
 
+    int loginAttemptCounter = 0;
+    const int loginRetryInterval = 100; // 10 milisekunder
+
     //? Logging in
     while (!tryActivateSystem(stateManager, loginSystem, randomGen)) {
-        // Vent lidt før at prøve igen
-        std::this_thread::sleep_for(std::chrono::seconds(1));
+        if (loginAttemptCounter >= loginRetryInterval) {
+            // Reset tælleren og forsøg at logge ind igen
+            loginAttemptCounter = 0;
+        } else {
+            // Inkrementér tælleren
+            loginAttemptCounter++;
+        }
     }
 
     //? System state: Active - Gathering Data
-    std::cout << "Pin code has been provided. Systemstate is active: \n" << std::endl;
+    std::cout << "Pin code has been provided. System state is active: \n" << std::endl;
 
-    std::thread sensorThread(sensorTask, std::ref(sharedData), std::ref(sensor1), std::ref(sensor2));
-    std::thread cameraThread(cameraTask, std::ref(sharedData), std::ref(camera));
+    //? Simuleret tidsbaseret kontrol loop
+    int sensorTimeCounter = 0;
+    int cameraTimeCounter = 0;
+    const int sensorTaskInterval = 60;  //? Interval for sensorTask i "millisekunder"
+    const int cameraTaskInterval = 120; //? Interval for cameraTask i "millisekunder"
 
-    //? Control-loop
     while (stateManager.isSystemActive()) {
-        int sensorSum = sharedData.getSensorSum();
-        auto cameraData = sharedData.getCameraData();
+        //? Udfør sensorTask ved hvert sensorTaskInterval
+        if (sensorTimeCounter >= sensorTaskInterval) {
+            sensorTask(sharedData, sensor1, sensor2);
+            sensorTimeCounter = 0;
+        }
 
+        //? Udfør cameraTask ved hvert cameraTaskInterval
+        if (cameraTimeCounter >= cameraTaskInterval) {
+            cameraTask(sharedData, camera);
+            cameraTimeCounter = 0;
+        }
+
+        //? Tjekker for indtrængen
         if (intrusionDetector.checkForIntrusion(sharedData)) {
             std::cout << "Intrusion detected! Activating alarm." << std::endl;
             stateManager.activateAlarm();
             intrusionDetector.handleIntrusion(stateManager, loginSystem);
-        } 
-
-    //! Print statements for sensor- and camera-data
-    std::cout << "Sensor Sum: " << sensorSum << "\n";
-
-    std::cout << "Camera Data:\n";
-    for (const auto& row : cameraData) {
-        for (int val : row) {
-            std::cout << val << " ";
         }
-        std::cout << "\n";
-    } 
-    
-    std::cout << "\n"; 
-        std::this_thread::sleep_for(std::chrono::seconds(1));
-    
-    } 
-    
-    sensorThread.join();
-    cameraThread.join();
+
+        //? Viser sensor- og kameradata
+        int sensorSum = sharedData.getSensorSum();
+        auto cameraData = sharedData.getCameraData();
+        std::cout << "Sensor Sum: " << sensorSum << "\n";
+        std::cout << "Camera Data:\n";
+        for (const auto& row : cameraData) {
+            for (int val : row) {
+                std::cout << val << " ";
+            }
+            std::cout << "\n";
+        }
+        std::cout << "\n"; 
+
+        //? Inkrementér tællere for simuleret tid. 
+        sensorTimeCounter++;
+        cameraTimeCounter++;
+    }
 
     return 0;
-
-    }
+}
