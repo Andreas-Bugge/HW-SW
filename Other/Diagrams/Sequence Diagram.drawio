@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-07T16:34:46.754Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="qQn2qXIWL4v_WXMCiAq5" version="22.1.17" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-08T04:01:28.401Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="CQQ4Hyk_ajByJZIUtqV8" version="22.1.16" type="github">
   <diagram name="Sequence Diagram" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="2050" dy="1088" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2284" dy="772" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,10 +10,10 @@
         <mxCell id="Vz6BkjTHFM_aH4ZLGt7y-67" value="&lt;b&gt;Alarm System&lt;/b&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-90" y="40" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vz6BkjTHFM_aH4ZLGt7y-69" value="&lt;b&gt;AlarmSystem&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" parent="1" vertex="1">
+        <mxCell id="Vz6BkjTHFM_aH4ZLGt7y-69" value="&lt;b&gt;AlarmSystem&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="345" y="60" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="Vz6BkjTHFM_aH4ZLGt7y-71" value="Sensors" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" parent="1" vertex="1">
+        <mxCell id="Vz6BkjTHFM_aH4ZLGt7y-71" value="Sensors" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="590" y="60" width="120" height="90" as="geometry" />
         </mxCell>
         <mxCell id="Vz6BkjTHFM_aH4ZLGt7y-77" value="&lt;i&gt;&lt;b&gt;[Alarm system &lt;br&gt;Active]&lt;/b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;labelPosition=left;verticalLabelPosition=top;align=right;verticalAlign=bottom;" parent="1" vertex="1">
@@ -96,7 +96,7 @@
         <mxCell id="Vz6BkjTHFM_aH4ZLGt7y-107" value="20ms" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
           <mxGeometry x="872.5" y="500" width="35" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Vz6BkjTHFM_aH4ZLGt7y-108" value="Camera" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" parent="1" vertex="1">
+        <mxCell id="Vz6BkjTHFM_aH4ZLGt7y-108" value="Camera" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="830" y="60" width="120" height="90" as="geometry" />
         </mxCell>
         <mxCell id="Vz6BkjTHFM_aH4ZLGt7y-109" value="Collecting Data" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;" parent="1" target="Vz6BkjTHFM_aH4ZLGt7y-101" edge="1">
