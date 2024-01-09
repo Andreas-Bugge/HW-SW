@@ -12,9 +12,11 @@ public:
 
     bool checkForIntrusion(const InputData& InputData);
 
+    void measure(int *result, int sensorData[2], int cameraData[9][9]);
+
     void handleIntrusion(StateManagement& stateManager, LogIn& loginSystem);
 
-    bool isIntrusionDetected(const std::vector<std::vector<int>>& cameraData, int sensorSum);
+    bool isIntrusionDetected(int sensorSum, int cameraData[9][9]); // Updated method signature
 private:
     
     bool alarmTriggered;

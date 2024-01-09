@@ -1,7 +1,7 @@
 #ifndef INPUTDATA_H
 #define INPUTDATA_H
 
-#include <vector>
+#include <array>
 #include "Sensors.h" 
 #include "Camera.h"  
 
@@ -10,13 +10,13 @@ public:
     InputData();
     ~InputData();
 
-    void setCameraData(const std::vector<std::vector<int>>& data);
-    std::vector<std::vector<int>> getCameraData() const;
+    void setCameraData(const std::array<std::array<int, 9>, 9>& data);
+    std::array<std::array<int, 9>, 9> getCameraData() const;
     void setSensorSum(int sum);
     int getSensorSum() const;
 
 private:
-    std::vector<std::vector<int>> cameraData;
+    std::array<std::array<int, 9>, 9> cameraData;
     int sensorSum;
 };
 

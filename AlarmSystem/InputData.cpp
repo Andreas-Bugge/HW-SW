@@ -3,11 +3,11 @@
 InputData::InputData() : sensorSum(0) {}
 InputData::~InputData() {}
 
-void InputData::setCameraData(const std::vector<std::vector<int>>& data) {
+void InputData::setCameraData(const std::array<std::array<int, 9>, 9>& data) {
     cameraData = data;
 }
 
-std::vector<std::vector<int>> InputData::getCameraData() const {
+std::array<std::array<int, 9>, 9> InputData::getCameraData() const {
     return cameraData;
 }
 

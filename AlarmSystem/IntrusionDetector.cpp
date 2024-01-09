@@ -5,20 +5,34 @@ IntrusionDetector::~IntrusionDetector() {}
 
 bool IntrusionDetector::checkForIntrusion(const InputData& sharedData) {
     int sensorSum = sharedData.getSensorSum();
-    auto cameraData = sharedData.getCameraData();
+    auto cameraDataArray = sharedData.getCameraData();
 
-    return isIntrusionDetected(cameraData, sensorSum);
-}
-
-bool IntrusionDetector::isIntrusionDetected(const std::vector<std::vector<int>>& cameraData, int sensorSum) {
-    int sum = 0;
-    
-    for (const auto& row : cameraData) {
-        for (int val : row) {
-            sum += sensorSum * val;
+    int cameraDataRaw[9][9];
+    for (int i = 0; i < 9; ++i) {
+        for (int j = 0; j < 9; ++j) {
+            cameraDataRaw[i][j] = cameraDataArray[i][j];
         }
     }
-    return sum >= 6290;
+
+    return isIntrusionDetected(sensorSum, cameraDataRaw);
+}
+
+
+void measure(int *result, int sensorData[2], int cameraData[9][9]) {
+    int sum = 0;
+    for (int i = 0; i < 9; ++i) {
+        for (int j = 0; j < 9; ++j) {
+            sum += sensorData[0] * cameraData[i][j];
+        }
+    }
+    *result = sum; 
+}
+
+bool IntrusionDetector::isIntrusionDetected(int sensorSum, int cameraData[9][9]) {
+    int result;
+    int sensorData[2] = {sensorSum, sensorSum};
+    measure(&result, sensorData, cameraData);
+    return result >= 6290; 
 }
 
 void IntrusionDetector::handleIntrusion(StateManagement& stateManager, LogIn& loginSystem) {

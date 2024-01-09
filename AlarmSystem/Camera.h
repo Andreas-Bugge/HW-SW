@@ -1,15 +1,15 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 
-#include <vector>
+#include <array>
 #include "LCG.h"
 
 class Camera {
-    public:
-        Camera();
-        ~Camera();
+public:
+    Camera();
+    ~Camera();
 
-        std::vector<std::vector<int> > data();
+    std::array<std::array<int, 9>, 9> data(); // Updated return type
 };
 
 #endif // CAMERA_H
