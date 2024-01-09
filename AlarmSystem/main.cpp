@@ -15,13 +15,22 @@ bool tryActivateSystem(StateManagement& stateManager, LogIn& loginSystem, LCG& r
     std::cout << "Generated pin: " << P << std::endl;
 
     if(loginSystem.isValid(P)) {
-        std::cout << "Pin is valid. Activating alarm system." << std::endl;
+        std::cout << "Pin is valid. Simulating activation delay..." << std::endl;
+
+        // Simulated delay loop
+        const int delayIterations = 100000; // value for longer or shorter delay
+        for (int i = 0; i < delayIterations; ++i) {
+            // This loop simulates a delay
+        }
+
+        std::cout << "Alarm system activated." << std::endl;
         return stateManager.activateSystem(true);
     } else {
         std::cout << "Pin is invalid. System remains inactive." << std::endl;
         return false;
     }
 }
+
 
 int main() {
     StateManagement stateManager;
