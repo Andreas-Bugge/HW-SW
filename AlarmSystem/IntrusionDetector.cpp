@@ -19,14 +19,15 @@ bool IntrusionDetector::checkForIntrusion(const InputData& sharedData) {
 
 
 void measure(int *result, int sensorData[2], int cameraData[9][9]) {
-    int sum = 0;
+    int intrusionMeasure = 0;
     for (int i = 0; i < 9; ++i) {
         for (int j = 0; j < 9; ++j) {
-            sum += sensorData[0] * cameraData[i][j];
+            intrusionMeasure += (sensorData[0] + sensorData[1]) * cameraData[i][j];
         }
     }
-    *result = sum; 
+    *result = intrusionMeasure;
 }
+
 
 bool IntrusionDetector::isIntrusionDetected(int sensorSum, int cameraData[9][9]) {
     int result;
