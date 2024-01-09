@@ -1,16 +1,14 @@
-#ifndef SHAREDDATA_H
-#define SHAREDDATA_H
+#ifndef INPUTDATA_H
+#define INPUTDATA_H
 
 #include <vector>
-#include <thread>
-#include <chrono>
 #include "Sensors.h" 
 #include "Camera.h"  
 
-class SharedData {
+class InputData {
 public:
-    SharedData();
-    ~SharedData();
+    InputData();
+    ~InputData();
 
     void setCameraData(const std::vector<std::vector<int>>& data);
     std::vector<std::vector<int>> getCameraData() const;
@@ -22,7 +20,7 @@ private:
     int sensorSum;
 };
 
-void sensorTask(SharedData& sharedData, Sensors& sensor1, Sensors& sensor2);
-void cameraTask(SharedData& sharedData, Camera& camera);
+void sensorTask(InputData& InputData, Sensors& sensor1, Sensors& sensor2);
+void cameraTask(InputData& InputData, Camera& camera);
 
-#endif // SHAREDDATA_H
+#endif // INPUTDATA_H

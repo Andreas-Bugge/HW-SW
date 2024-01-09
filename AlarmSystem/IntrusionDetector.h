@@ -2,18 +2,15 @@
 #define INTRUSIONDETECTOR_H
 
 #include <iostream>
-#include <vector>
-#include <thread>
-#include "SharedData.h"
-#include "StateManagement.h"
-#include "PinCode.h"
+#include "InputData.h"
+#include "AlarmSystem.h"
 
 class IntrusionDetector {
 public:
     IntrusionDetector();
     ~IntrusionDetector();
 
-    bool checkForIntrusion(const SharedData& sharedData);
+    bool checkForIntrusion(const InputData& InputData);
 
     void handleIntrusion(StateManagement& stateManager, LogIn& loginSystem);
 

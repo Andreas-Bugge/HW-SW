@@ -1,6 +1,4 @@
 #include "Sensors.h"
-#include "StateManagement.h"
-#include "LCG.h"
 
 Sensors::Sensors() {
 }

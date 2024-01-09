@@ -3,11 +3,10 @@
 #include <ctime>
 
 //* Headerfiles
-#include "PinCode.h"
-#include "StateManagement.h"
+#include "AlarmSystem.h"
 #include "Sensors.h"
 #include "Camera.h"
-#include "SharedData.h"
+#include "InputData.h"
 #include "IntrusionDetector.h"
 #include "LCG.h"
 
@@ -26,10 +25,10 @@ bool tryActivateSystem(StateManagement& stateManager, LogIn& loginSystem, LCG& r
 
 int main() {
     StateManagement stateManager;
-    LogIn loginSystem;
+    LogIn loginSystem(stateManager);
     Sensors sensor1, sensor2;
     Camera camera;
-    SharedData sharedData;
+    InputData inputData;
     IntrusionDetector intrusionDetector;
     LCG randomGen;    
 
@@ -59,26 +58,26 @@ int main() {
     while (stateManager.isSystemActive()) {
         //? Udfør sensorTask ved hvert sensorTaskInterval
         if (sensorTimeCounter >= sensorTaskInterval) {
-            sensorTask(sharedData, sensor1, sensor2);
+            sensorTask(inputData, sensor1, sensor2);
             sensorTimeCounter = 0;
         }
 
         //? Udfør cameraTask ved hvert cameraTaskInterval
         if (cameraTimeCounter >= cameraTaskInterval) {
-            cameraTask(sharedData, camera);
+            cameraTask(inputData, camera);
             cameraTimeCounter = 0;
         }
 
         //? Tjekker for indtrængen
-        if (intrusionDetector.checkForIntrusion(sharedData)) {
+        if (intrusionDetector.checkForIntrusion(inputData)) {
             std::cout << "Intrusion detected! Activating alarm." << std::endl;
             stateManager.activateAlarm();
             intrusionDetector.handleIntrusion(stateManager, loginSystem);
         }
 
         //? Viser sensor- og kameradata
-        int sensorSum = sharedData.getSensorSum();
-        auto cameraData = sharedData.getCameraData();
+        int sensorSum = inputData.getSensorSum();
+        auto cameraData = inputData.getCameraData();
         std::cout << "Sensor Sum: " << sensorSum << "\n";
         std::cout << "Camera Data:\n";
         for (const auto& row : cameraData) {

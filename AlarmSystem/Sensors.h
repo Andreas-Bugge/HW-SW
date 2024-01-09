@@ -1,6 +1,8 @@
 #ifndef SENSORS_H
 #define SENSORS_H
+
 #include <iostream>
+#include "LCG.h"
 
 class Sensors {
     public:

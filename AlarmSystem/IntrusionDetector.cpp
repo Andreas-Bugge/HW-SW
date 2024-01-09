@@ -3,7 +3,7 @@
 IntrusionDetector::IntrusionDetector() {}
 IntrusionDetector::~IntrusionDetector() {}
 
-bool IntrusionDetector::checkForIntrusion(const SharedData& sharedData) {
+bool IntrusionDetector::checkForIntrusion(const InputData& sharedData) {
     int sensorSum = sharedData.getSensorSum();
     auto cameraData = sharedData.getCameraData();
 
